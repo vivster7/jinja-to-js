@@ -327,6 +327,7 @@ class Tests(unittest.TestCase):
         self.env.filters['unicode_snowmen'] = unicode_snowmen
 
         self._run_test('custom_filters.jinja')
+        self._run_test('custom_filters_and_extends.jinja')
 
     def _run_test(self, name, additional=None, **kwargs):
 
